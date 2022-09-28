@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency API</title>
+  <link rel="stylesheet" href="currency.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>Currency Converter</header>
+    <form action="#">
+      <div class="amount">
+        <p>Enter Amount</p>
+        <input type="number" value="1">
+      </div>
+      <div class="drop-list">
+        <div class="from">
+          <p>From</p>
+          <div class="select-box">
+            <img class="img1" src="https://flagcdn.com/w40/us.png" alt="flag">
+            <select class="one">
+              <option value="USD">USD</option>
+              <option value="NPR">NPR</option>
+              <option value="INR">INR</option>
+              <option value="PKR">PKR</option>
+              <option value="MAD">MAD</option>
+              <option value="EGP">EGP</option>
+            </select>
+          </div>
+        </div>
+        <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+        <div class="to">
+          <p>To</p>
+          <div class="select-box">
+            <img class="img2" src="https://flagcdn.com/w40/eg.png" alt="flag">
+            <select class="two">
+              <option value="USD">USD</option>
+              <option value="NPR">NPR</option>
+              <option value="INR">INR</option>
+              <option value="PKR">PKR</option>
+              <option value="MAD">MAD</option>
+              <option value="EGP" selected>EGP</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="exchanger-rate">Getting Exchanger Rate...</div>
+      <button>Get Exchanger Rate</button>
+    </form>
+  </div>
+
+  <script src="currency.js"></script>
+</body>
+</html>
